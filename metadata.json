@@ -1,0 +1,5 @@
+{
+  "name": "Asistente de Prompts Juridicos de Grupo ALICAM",
+  "description": "Una aplicación web para generar prompts de alta calidad para consultas legales utilizando IA, asegurando respuestas más precisas y estructuradas.",
+  "requestFramePermissions": []
+}

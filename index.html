@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asistente de Prompts Juridicos de Grupo ALICAM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.x/dist/typography.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #1a202c; /* An elegant, less deep blue/charcoal */
+      background-image:
+        /* Top Layer: Grid */
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        /* Middle Layer: Radial Glow */
+        radial-gradient(circle at center, rgba(34, 211, 238, 0.1), transparent 55%),
+        /* Bottom Layer: Watermark */
+        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'%3e%3cg fill='none' stroke='%2338bdf8' stroke-width='1.5'%3e%3cpath opacity='0.05' d='M600 200 L600 250 M600 550 L600 600 M550 250 L650 250'/%3e%3cpath opacity='0.1' d='M500 300 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0 M700 300 a50,50 0 1,0 100,0 a50,50 0 1,0 -100,0'/%3e%3cpath opacity='0.08' d='M550 250 L525 300 M650 250 L675 300 M500 350 L500 550 L700 550 L700 350 M500 550 L450 550 Q400 550 400 500 L400 400 M700 550 L750 550 Q800 550 800 500 L800 400'/%3e%3cpath opacity='0.06' d='M400 450 L350 450 M800 450 L850 450 M600 200 L300 200 L300 150 M900 200 L900 150 M300 150 h-50 v-50 h50 M900 150 h50 v-50 h-50 M250 100 h-50 M950 100 h50' /%3e%3c/g%3e%3c/svg%3e");
+      background-size: 20px 20px, 20px 20px, 100% 100%, 800px auto;
+      background-position: 0 0, 0 0, center, center;
+      background-repeat: repeat, repeat, no-repeat, no-repeat;
+      font-family: 'Inter', sans-serif;
+      color: #d1d5db; /* Tailwind gray-300 */
+    }
+    .prose {
+      color: #d1d5db;
+    }
+    .prose h1, .prose h2, .prose h3, .prose h4, .prose strong {
+      color: #f9fafb; /* Tailwind gray-50 */
+    }
+    /* Custom Scrollbar for a more modern look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(34, 211, 238, 0.5); /* A semi-transparent cyan */
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(34, 211, 238, 0.7);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "marked": "https://cdn.jsdelivr.net/npm/marked@13.0.1/+esm",
+    "@google/genai": "https://cdn.jsdelivr.net/npm/@google/genai@0.15.0/+esm"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
